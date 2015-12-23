@@ -35,3 +35,6 @@
 
 ; *.rc files
 (add-to-list 'auto-mode-alist '("\\.*rc$" . conf-unix-mode))
+
+; *.m files
+(add-to-list 'auto-mode-alist '("\\.*m$" . octave-mode))
