@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/galtay/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set the terminal to 256 color mode
 export TERM=xterm-256color
