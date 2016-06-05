@@ -31,6 +31,10 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
+;; yaml-mode
+(use-package yaml-mode
+  :ensure t)
+
 
 ;; builtin theme
 ;; (load-theme 'misterioso t)
@@ -77,3 +81,6 @@
 
 ; *.m files
 (add-to-list 'auto-mode-alist '("\\.*m$" . octave-mode))
+
+; *.yaml files
+(add-to-list 'auto-mode-alist '("\\.yaml" . yaml-mode))
