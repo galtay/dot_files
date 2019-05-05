@@ -35,6 +35,10 @@
 (use-package yaml-mode
   :ensure t)
 
+;; dockerfile-mode
+(use-package dockerfile-mode
+  :ensure t)
+
 
 ;; builtin theme
 ;; (load-theme 'misterioso t)
@@ -85,3 +89,22 @@
 ; *.yaml files
 (add-to-list 'auto-mode-alist '("\\.yaml" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml" . yaml-mode))
+
+; Dockerfile files
+(add-to-list 'auto-mode-alist '("Dockerfile" . dockerfile-mode))
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (moe-theme molokai-theme afternoon-theme dracula-theme hc-zenburn-theme abyss-theme yaml-mode use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
