@@ -35,6 +35,10 @@
 (use-package yaml-mode
   :ensure t)
 
+;; markdown-mode
+(use-package markdown-mode
+  :ensure t)
+
 ;; dockerfile-mode
 (use-package dockerfile-mode
   :ensure t)
@@ -85,6 +89,9 @@
 
 ; *.m files
 (add-to-list 'auto-mode-alist '("\\.*m$" . octave-mode))
+
+; *.md files
+(add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
 
 ; *.yaml files
 (add-to-list 'auto-mode-alist '("\\.yaml" . yaml-mode))
